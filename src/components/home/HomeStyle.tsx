@@ -161,7 +161,13 @@ h2{
 
 p{
     overflow-wrap: break-word;
-    overflow-y: auto;
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; 
+    line-clamp: 4; 
+    box-orient: vertical;
     margin: 0px;
     height: 80px;
     

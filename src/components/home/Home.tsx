@@ -32,7 +32,7 @@ import MoreInformations from './MoreInformations';
 }
 
 
-// Função para mapear o tipo do Pokémon a uma cor
+
 export const getColorByType = (type: string): string => {
   switch (type) {
     case 'grass':
@@ -147,9 +147,7 @@ const fetchPokemons = async () => {
 
   const handleSelectEvolution = async (pokemonName: string) => {
     const selectedPokemon = pokemons.find(pokemon => pokemon.name === pokemonName);
-    if (selectedPokemon) {
-       
-        
+    if (selectedPokemon) {   
         setPokemonCard(selectedPokemon);  
     }
 };
@@ -169,7 +167,7 @@ const fetchPokemons = async () => {
           <LogoHome />
           <ContainerSearchPokemon>
             <SearchPokemon
-              placeholder="Pesquise o pokemon"
+              placeholder="Search  pokemon"
               value={search}
               onChange={(e) => setSearch(e.target.value.toLowerCase())}
             />
